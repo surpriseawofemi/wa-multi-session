@@ -1,0 +1,5 @@
+.env
+wa_credentials/
+node_modules/
+chats/
+static/files/
