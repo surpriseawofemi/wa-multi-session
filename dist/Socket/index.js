@@ -60,7 +60,8 @@ const startSession = (sessionId = "mysession", options = { printQR: true }) => _
             auth: state,
             logger,
             markOnlineOnConnect: false,
-            browser: baileys_1.Browsers.ubuntu("Chrome"),
+            browser: Browsers.macOS('Desktop'),
+            syncFullHistory: true
         });
         sessions.set(sessionId, Object.assign({}, sock));
         try {
