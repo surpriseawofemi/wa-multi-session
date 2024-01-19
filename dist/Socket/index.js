@@ -61,7 +61,7 @@ const startSession = (sessionId = "mysession", options = { printQR: true }) => _
             logger,
             markOnlineOnConnect: false,
             browser: Browsers.macOS('Desktop'),
-            syncFullHistory: true
+            syncFullHistory: true,
         });
         sessions.set(sessionId, Object.assign({}, sock));
         try {
